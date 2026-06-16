@@ -1,0 +1,38 @@
+{
+  "blocked_terms": [],
+  "english_abuse_terms": [
+    "idiot",
+    "stupid",
+    "shut up",
+    "loser",
+    "trash",
+    "noob",
+    "dumb"
+  ],
+  "sexual_terms": [],
+  "spam_terms": [
+    "free nitro",
+    "click this link",
+    "download cheat",
+    "guaranteed profit"
+  ],
+  "target_patterns": [
+    "you",
+    "u",
+    "ur",
+    "your",
+    "you are",
+    "you're"
+  ],
+  "safe_phrases": [
+    "code example",
+    "rule explanation",
+    "feature test",
+    "moderation test"
+  ],
+  "notes": [
+    "English detection uses Unicode NFKC normalization and casefolding, so matching is case-insensitive.",
+    "If an abuse term is detected with a target clue such as @user or you/u, it may be marked as targeted_attack.",
+    "safe_phrases are checked first and are useful for false-positive exceptions."
+  ]
+}

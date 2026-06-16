@@ -1,176 +1,41 @@
+# Documentation
+
+This English package keeps the public GitHub-facing documentation and bot runtime messages mainly in English.
+
 ## Translation Notice
 
-All English translations in this repository were assisted by AI. Some wording may be imperfect or slightly different from the original intent. ssrryy
+All English translations and multilingual documents in this repository may have been assisted by AI. Some wording may be imperfect or slightly different from the original intent.
 
-# Discord OLLAMA Bot
+If there is any difference between translated documents and the actual source code, the source code should be treated as the final reference.
 
-A Discord moderation assistant that combines rule-based moderation, case tracking, local Ollama AI, PC status monitoring, temperature-protection modes, and a personal music library.
+## Main Documents
 
-This project was designed as a self-hosted helper bot for Discord server moderation, warning workflows, local AI replies, user interaction insights, and basic server utilities.
+- [Commands](./COMMANDS.md)
+- [AI and Moderation Notes](./AI_AND_MODERATION_NOTES.md)
+- [Security Design](./SECURITY_DESIGN_EN.md)
+- [Code-Level Security Design](./SECURITY_DESIGN_CODE_EN.md)
 
-## Project Note
+## Additional Language Documents
 
-This repository is an organized English version of a project I developed during high school.
+These documents are provided as supplementary references for easier reading.
 
-It was prepared as part of my personal portfolio and learning record. Since this is one of my first repositories uploaded to GitHub, there may still be issues in the repository structure, documentation, wording, or setup instructions.
+- [繁體中文 zh-TW](./zh-TW/README.md)
+- [简体中文 zh-CN](./zh-CN/README.md)
+- [日本語 ja-JP](./ja-JP/README.md)
+- [한국어 ko-KR](./ko-KR/README.md)
 
-If you find any problems or have suggestions, feel free to contact me or open an issue.
+## Available Documents by Language
 
+| Language | Introduction | Commands | AI / Moderation Notes | Rules | Security Design | Code-Level Security |
+|---|---|---|---|---|---|---|
+| English | - | [Commands](./COMMANDS.md) | [AI / Moderation Notes](./AI_AND_MODERATION_NOTES.md) | - | [Security Design](./SECURITY_DESIGN_EN.md) | [Code-Level Security Design](./SECURITY_DESIGN_CODE_EN.md) |
+| 繁體中文 zh-TW | [README](./zh-TW/README.md) | [Commands](./zh-TW/COMMANDS.md) | [AI / Moderation Notes](./zh-TW/AI_AND_MODERATION_NOTES.md) | [Rules](./zh-TW/RULES.md) | [Security Design](./zh-TW/SECURITY_DESIGN.md) | [Code-Level Security Design](./zh-TW/SECURITY_DESIGN_CODE.md) |
+| 简体中文 zh-CN | [README](./zh-CN/README.md) | [Commands](./zh-CN/COMMANDS.md) | [AI / Moderation Notes](./zh-CN/AI_AND_MODERATION_NOTES.md) | [Rules](./zh-CN/RULES.md) | [Security Design](./zh-CN/SECURITY_DESIGN.md) | [Code-Level Security Design](./zh-CN/SECURITY_DESIGN_CODE.md) |
+| 日本語 ja-JP | [README](./ja-JP/README.md) | [Commands](./ja-JP/COMMANDS.md) | [AI / Moderation Notes](./ja-JP/AI_AND_MODERATION_NOTES.md) | - | - | - |
+| 한국어 ko-KR | [README](./ko-KR/README.md) | [Commands](./ko-KR/COMMANDS.md) | [AI / Moderation Notes](./ko-KR/AI_AND_MODERATION_NOTES.md) | - | - | - |
 
-## Features
+## Notes
 
-- Rule-based message moderation
-- Report and case workflow with Discord text channels or forum posts
-- Case deduplication to avoid repeated spam reports
-- Warning, final warning, and optional short timeout flow
-- Admin-only case tools such as `/case_list`, `/case_clear`, and `/case_clear_test`
-- Away mode for limited automatic moderation handling when admins are unavailable
-- Local Ollama AI replies with `/ai`, mentions, and legacy `!ai`
-- Long-form AI collection mode with optional image-to-text analysis through a vision model
-- User profile summaries and AI interaction insights
-- PC status reports through psutil, NVIDIA `nvidia-smi`, and LibreHardwareMonitor
-- Temperature guard modes: normal, eco, and emergency
-- Personal music library and Discord voice playback
-- Public/private slash command response control
-- JSON data storage and JSONL logs
+The multilingual documents are mainly for project introduction, command overview, AI/moderation behavior, safety notes, and deployment reminders.
 
-## Safety Notice
-
-Never commit the following files or data:
-
-- `.env`
-- Discord bot token
-- Webhook URLs
-- API keys or passwords
-- `data/`
-- `logs/`
-- Uploaded music files
-- Real moderation cases
-- Real AI conversation records
-- User profile data or cached insights
-
-Use `.env.example` as a safe public template. Copy it to `.env` locally and fill in your private values.
-
-If a Discord token or webhook URL is ever exposed, rotate it immediately in the Discord Developer Portal or recreate the webhook.
-
-## Requirements
-
-- Python 3.10+
-- Discord bot token
-- `discord.py`
-- `python-dotenv`
-- `requests`
-- `aiohttp`
-- `psutil`
-- Optional: Ollama for local AI
-- Optional: FFmpeg for music playback
-- Optional: LibreHardwareMonitor for CPU temperature readings on Windows
-- Optional: NVIDIA driver tools for GPU status through `nvidia-smi`
-
-Install dependencies:
-
-```bash
-python -m pip install -r requirements.txt
-```
-
-## Configuration
-
-Copy the public template:
-
-```bash
-cp .env.example .env
-```
-
-Then fill in your real values:
-
-```env
-DISCORD_TOKEN=
-GUILD_ID=
-REPORT_CHANNEL_ID=
-ADMIN_ROLE_ID=
-WARNING_ROLE_ID=
-```
-
-For moderation testing, keep automatic timeout disabled at first:
-
-```env
-AUTO_TIMEOUT_ENABLED=false
-PUBLIC_WARNING=true
-```
-
-After confirming the rules work correctly, you can enable short timeout:
-
-```env
-AUTO_TIMEOUT_ENABLED=true
-AUTO_TIMEOUT_MINUTES=1
-AUTO_TIMEOUT_COUNT=3
-AUTO_TIMEOUT_WINDOW_SECONDS=120
-```
-
-## Running the Bot
-
-```bash
-python main.py
-```
-
-For development guild sync, set `GUILD_ID` in `.env` so slash commands appear faster.
-
-## Important Commands
-
-Member commands:
-
-- `/status`
-- `/my_warnings`
-- `/my_profile`
-- `/ai`
-- `@bot message`
-
-Moderation commands:
-
-- `/banword_add`
-- `/banword_remove`
-- `/banword_list`
-- `/safe_add`
-- `/safe_remove`
-- `/case_list`
-- `/case_resolve`
-- `/case_ignore`
-- `/case_clear`
-- `/case_clear_test`
-- `/punish`
-- `/auto_mod`
-- `/auto_mod_status`
-
-System commands:
-
-- `/pc_status`
-- `/pc_monitor_start`
-- `/pc_monitor_stop`
-- `/bot_mode`
-- `/bot_mode_status`
-- `/bot_guard_set`
-
-Music commands:
-
-- `/music_add`
-- `/music_list`
-- `/go_music`
-- `/music_queue`
-- `/music_pause`
-- `/music_resume`
-- `/music_skip`
-- `/music_stop`
-- `/music_volume`
-- `/music_loop`
-
-See `docs/COMMANDS.md` for a fuller command guide.
-
-## Data Files
-
-Runtime files are created under `data/` and `logs/`. These folders may contain user IDs, channel IDs, moderation cases, AI prompts, cached summaries, and error traces. They are excluded by `.gitignore` and should not be committed.
-
-## License
-
-This repository uses a custom restricted license unless replaced by the author. See `LICENSE`.
-
-Third-party packages keep their own licenses.
+Please do not upload `.env`, Discord tokens, webhook URLs, API keys, `data/`, `logs/`, real user records, moderation cases, AI conversation records, or uploaded music files to any public repository.

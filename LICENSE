@@ -8,31 +8,41 @@ This is a custom restricted license. It is not an open-source license.
 
 ## 1. Educational and Learning Use
 
-You are welcome to view, study, and use this project for individual learning, classroom demonstrations, personal practice, academic research, and educational reference.
+You are welcome to view, study, and use this project for personal learning, classroom demonstrations, academic reference, educational activities, and non-commercial research.
 
-Teachers, students, and learners may use this project as a learning example, classroom material, or reference project.
+Teachers, students, and learners may use this project as a learning example, classroom reference, or study material.
 
-For private learning or classroom practice, formal attribution is not required, but it is appreciated.
+Attribution is appreciated, but not required, for private learning, classroom practice, academic reference, or non-commercial educational use.
 
-For any public reference, presentation, report, article, video, teaching material, portfolio, or public discussion of this project, appropriate credit should be given to the original author, WWDOGE954.
+If you publicly reference this project in a report, presentation, article, video, teaching material, portfolio, or public discussion, giving appropriate credit to the original author, WWDOGE954, is highly appreciated.
 
-You may not claim this project, its source code, documentation, or any modified version as your own original work.
+You may modify the project for personal learning, classroom practice, academic reference, or private experimentation.
+
+However, you may not claim this project, its source code, documentation, or any modified version as your own original work.
 
 ## 2. Non-Commercial Use Only
 
-You may not use this project, its source code, or any derivative work for commercial purposes without explicit written permission from the author.
+You may not use this project, its source code, documentation, or any derivative work for commercial purposes without explicit written permission from the author.
 
 This includes, but is not limited to:
 
-- Selling this project or modified versions of it
-- Sublicensing, renting, or reselling this project
-- Using the bot to generate revenue
-- Deploying it as a paid service
-- Deploying it as an ad-supported service
-- Integrating it into commercial or corporate environments for business use
-- Packaging this project as part of a commercial product or service
+* Selling this project or modified versions of it
+* Sublicensing, renting, or reselling this project
+* Using the bot to generate revenue
+* Deploying it as a paid service
+* Deploying it as an ad-supported service
+* Integrating it into commercial or corporate environments for business use
+* Packaging this project as part of a commercial product or service
 
-## 3. Data and Privacy Restrictions
+## 3. Redistribution Restrictions
+
+You may not publicly redistribute, re-upload, republish, mirror, or host copies of this project, whether modified or unmodified, without explicit written permission from the author.
+
+If you want to share this project with others, please link to the original repository instead of re-uploading the files.
+
+You may not remove or alter this license notice in any permitted shared or referenced materials.
+
+## 4. Data and Privacy Restrictions
 
 You may not use this project to collect, sell, resell, trade, leak, expose, or misuse other people's personal data, Discord user data, moderation records, AI conversation records, uploaded files, logs, or any other private information.
 
@@ -42,7 +52,7 @@ Do not publish `.env` files, Discord tokens, webhook URLs, API keys, passwords, 
 
 Misuse of this project for privacy invasion, data resale, data scraping, doxxing, unauthorized monitoring, or similar harmful behavior is strictly prohibited.
 
-## 4. Music and Uploaded Content
+## 5. Music and Uploaded Content
 
 This project may include features related to music files, uploaded audio, or Discord voice playback.
 
@@ -54,17 +64,11 @@ Do not use this project to upload, play, distribute, store, or share copyrighted
 
 Using this project for copyright infringement, unauthorized music distribution, or illegal content sharing is strictly prohibited.
 
-## 5. Modification and Redistribution
-
-You may modify the source code for personal learning, classroom practice, academic reference, or private experimentation.
-
-However, you may not redistribute, publish, re-upload, or host copies of this project, whether modified or unmodified, in public repositories, websites, public services, or commercial platforms without explicit written permission from the author.
-
-You may not remove or alter this license notice in redistributed or referenced materials.
-
 ## 6. Disclaimer
 
 This project is provided "as is", without warranty of any kind.
+
+The author does not guarantee that the project is error-free, secure, suitable for production use, or suitable for any specific purpose.
 
 The author is not responsible for any data loss, system instability, account issues, security incidents, copyright issues, privacy issues, legal issues, or other damages caused by the deployment, modification, or use of this project.
 

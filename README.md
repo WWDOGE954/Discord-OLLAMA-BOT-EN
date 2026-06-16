@@ -1,8 +1,21 @@
+## Translation Notice
+
+All English translations in this repository were assisted by AI. Some wording may be imperfect or slightly different from the original intent. ssrryy
+
 # Discord OLLAMA Bot
 
 A Discord moderation assistant that combines rule-based moderation, case tracking, local Ollama AI, PC status monitoring, temperature-protection modes, and a personal music library.
 
-This project is designed for Discord server administrators who want a self-hosted helper bot for daily moderation, warning workflows, local AI summaries, user interaction insights, and basic server utilities.
+This project was designed as a self-hosted helper bot for Discord server moderation, warning workflows, local AI replies, user interaction insights, and basic server utilities.
+
+## Project Note
+
+This repository is an organized English version of a project I developed during high school.
+
+It was prepared as part of my personal portfolio and learning record. Since this is one of my first repositories uploaded to GitHub, there may still be issues in the repository structure, documentation, wording, or setup instructions.
+
+If you find any problems or have suggestions, feel free to contact me or open an issue.
+
 
 ## Features
 
@@ -20,10 +33,6 @@ This project is designed for Discord server administrators who want a self-hoste
 - Personal music library and Discord voice playback
 - Public/private slash command response control
 - JSON data storage and JSONL logs
-
-## Translation Notice
-
-All English translations in this repository were assisted by AI. Some wording may be imperfect or slightly different from the original intent.
 
 ## Safety Notice
 

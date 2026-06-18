@@ -58,6 +58,18 @@ Use `.env.example` as a safe public template. Copy it to `.env` locally and fill
 
 If a Discord token, webhook URL, API key, or password is ever exposed, revoke or regenerate it immediately.
 
+## AI Provider and Privacy Notice
+
+This project is designed with local Ollama usage in mind.
+
+Using a local AI model is recommended when privacy is important, because prompts, moderation context, user interaction summaries, logs, and memory-related data can stay on the deployer's own machine.
+
+Using a cloud AI API is possible only if the deployer modifies the project or adds API support. However, this may send prompts, user-related context, moderation records, or conversation data to a third-party provider.
+
+If you choose to use a cloud AI API, you are responsible for reviewing the provider's privacy policy, data retention policy, terms of service, and any legal or compliance requirements.
+
+For privacy-sensitive servers, school environments, or communities involving minors, local AI deployment is strongly recommended.
+
 ## Requirements
 
 - Python 3.10+

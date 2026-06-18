@@ -7,6 +7,19 @@
 > **번역 안내**  
 > 이 프로젝트는 실제 소스 코드와 영어 GitHub 주요 문서를 최종 기준으로 합니다. 한국어 문서는 AI 번역 또는 정리 도움을 포함할 수 있으며, 내용이 다를 경우 소스 코드를 우선으로 확인해 주세요.
 
+## AI Provider and Privacy Notice
+
+This project was originally designed to use local Ollama as the main AI provider.
+
+When privacy is important, using a local AI model is recommended because prompts, moderation context, user interaction summaries, memory-related data, and logs can remain on the deployer's own machine.
+
+If the deployer modifies this project to use a cloud AI API, prompts, user-related context, moderation records, or conversation data may be sent to a third-party provider.
+
+If you choose to use a cloud AI API, you are responsible for reviewing the provider's privacy policy, data retention policy, terms of service, and any legal or compliance requirements.
+
+For privacy-sensitive servers, school environments, or communities involving minors, local AI deployment is strongly recommended.
+
+
 ## 문서 바로가기
 
 - [명령어 요약](./COMMANDS.md)
